@@ -25,9 +25,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\app\components\css\" />
-    <Folder Include="ClientApp\app\components\html\" />
-    <Folder Include="ClientApp\app\components\ts\" />
+    <None Remove="ClientApp\components\ts\app.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\components\css\" />
+    <Folder Include="ClientApp\components\html\" />
+    <Folder Include="AngularCodeSnippets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\ts\app.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

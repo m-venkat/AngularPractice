@@ -1,0 +1,28 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+		<Header>
+			<Title>ngimportTSPackage</Title>
+			<Shortcut>ngimportTSPackage</Shortcut>
+			<Description>Code snippet for importing package into TypeScript code</Description>
+			<Author>Venkatesh</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>module</ID>
+					<Default>module</Default>
+					<ToolTip>Module/Directive/Component to be imported, e.g. BrowserModule, CommonModule, etc</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>package</ID>
+					<Default>.</Default>
+					<ToolTip>Package to be imported e.g. "@angular/core" etc</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[import { $module$ } from "$package$";]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>

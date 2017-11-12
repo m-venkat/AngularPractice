@@ -1,0 +1,61 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>ngComponentDirective</Title>
+    <Author>Venaktesh</Author>
+    <Shortcut>ngComponentDirective</Shortcut>
+    <Description>Code snippet for @Component Directive</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+    	<Literal>
+		<ID>selector</ID>
+		<Default>my-selector</Default>
+		<ToolTip>Selector for component</ToolTip>
+	</Literal>
+	<Literal>
+		<ID>url</ID>
+		<Default>path_to_html</Default>
+		<ToolTip>Path to Html</ToolTip>
+	</Literal>
+	<Literal>
+			<ID>styleurl</ID>
+			<Default>path_to_css</Default>
+			<ToolTip>Path to Css</ToolTip>
+	</Literal>
+	<Literal>
+				<ID>App</ID>
+				<Default>App</Default>
+				<ToolTip>Component Name</ToolTip>
+	</Literal>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>Code snippet for @Component Directive</ToolTip>
+        <Default>'ngComponentDirective'</Default>
+      </Literal>
+      <Literal>
+        <ID>classname</ID>
+        <ToolTip>Class Name</ToolTip>
+        <Default>ngComponentDirective</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="TypeScript"><![CDATA[import { Component } from '@angular/core';
+    
+    @Component({
+      selector: '$selector$',
+      templateUrl: './$url$.htm',
+      styleUrls: ['./$styleurl$.css']
+})
+
+export class $App$Component {
+}
+    ]]> 
+  </Code>
+  </Snippet>
+</CodeSnippet>
+
+
+
+

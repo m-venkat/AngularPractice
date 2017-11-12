@@ -1,0 +1,45 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>ngNgModuleDirective</Title>
+    <Author>Venaktesh</Author>
+    <Shortcut>ngNgModuleDirective</Shortcut>
+    <Description>Code snippet for @NgModule Directive</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>Code snippet for @NgModule Directive</ToolTip>
+        <Default>'ngNgModuleDirective'</Default>
+      </Literal>
+      <Literal>
+        <ID>classname</ID>
+        <ToolTip>Class Name</ToolTip>
+        <Default>ngNgModuleDirective</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="TypeScript"><![CDATA[@NgModule({
+    declarations: [],
+    bootstrap: [],
+    exports: [],
+    entryComponents: [],        
+    imports: [
+        CommonModule,
+        HttpModule,
+        FormsModule,
+        RouterModule.forRoot([
+            /*{ path: '', redirectTo: 'home', pathMatch: 'full' }
+            { path: 'home', component: HomeComponent },
+            { path: 'counter', component: CounterComponent },
+            { path: 'fetch-data', component: FetchDataComponent },
+            { path: '**', redirectTo: 'home' }*/
+        ])
+    ]
+})
+    ]]> 
+  </Code>
+  </Snippet>
+</CodeSnippet>
